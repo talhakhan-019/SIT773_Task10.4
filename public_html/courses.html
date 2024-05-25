@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style>
+        .card{
+            height: 350px;
+            position: relative;
+        }
+        .card img{
+            height: 200px;
+        }
+        .card a{
+            position: absolute;
+            bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="course">
+        <div class="maincontainer">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark" style="color: #fff;">
+                <div class="container-fluid">
+                  <a class="navbar-brand logo" href="./index.html">
+                    <img src="./images/logo.png" alt="">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" style="color: #fff;" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="./courses.html">Courses</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" style="color: #fff;" href="./contact.html">Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
+            <div class="container mt-5">
+                <h1 class="text-center">Our Products</h1>
+                <input class="form-control mb-4" id="productSearch" type="text" placeholder="Search for products..">
+        
+                <div class="row" id="productList">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+            document.addEventListener('DOMContentLoaded', function() {
+        const productSearch = document.getElementById('productSearch');
+        const productList = document.getElementById('productList');
+
+        productSearch.addEventListener('keyup', function() {
+            const filter = productSearch.value.toLowerCase();
+            const products = productList.getElementsByClassName('col-md-4');
+
+            Array.from(products).forEach(function(product) {
+                const title = product.querySelector('.card-title').textContent.toLowerCase();
+                if (title.includes(filter)) {
+                    product.style.display = '';
+                } else {
+                    product.style.display = 'none';
+                }
+            });
+        });
+    });
+
+    // Array of objects containing card details
+const products = [
+    {
+        imgSrc: "./images/course1.jpg",
+        altText: "Product 1",
+        title: "Online Photography Course",
+        price: "$300",
+        link: "course.html"
+    },
+    {
+        imgSrc: "./images/course2.png",
+        altText: "Product 2",
+        title: "Full Stack Web Development Course",
+        price: "$250",
+        link: "course.html"
+    },
+    {
+        imgSrc: "./images/course3.png",
+        altText: "Product 3",
+        title: "Tutor Training Course",
+        price: "$499",
+        link: "course.html"
+    }
+];
+
+// Get the product list container
+const productList = document.getElementById('productList');
+
+// Generate HTML for each product and append to the container
+products.forEach(product => {
+    const productCard = `
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <img src="${product.imgSrc}" class="card-img-top" alt="${product.altText}">
+                <div class="card-body">
+                    <h5 class="card-title">${product.title}</h5>
+                    <p class="card-text">${product.price}</p>
+                    <a href="${product.link}" class="btn btn-primary">View Course</a>
+                </div>
+            </div>
+        </div>
+    `;
+    productList.innerHTML += productCard;
+});
+
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

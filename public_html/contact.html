@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <style>
+        .contact {
+            background: rgba(132,106,221,0.9);
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-form {
+            background-color: #fff;
+            width: 70%;
+            height: 80vh;
+            border-radius: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .contact-form img {
+            height: 350px;
+        }
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .contact-form-input {
+            background-color: #e6e6e6;
+            padding: 10px 30px;
+            margin: 10px;
+            border-radius: 30px;
+            position: relative;
+        }
+        .contact-form-input input, .contact-form-input textarea {
+            padding: 5px 10px;
+            border: none;
+            background-color: transparent;
+            outline: none;
+            width: 250px;
+        }
+        .contact-form-input textarea {
+            height: 2.5rem;
+        }
+        .contact-form .left {
+            display: flex;
+            flex-direction: column;
+        }
+        .send-button {
+            padding: 15px 20px;
+            border: none;
+            background-color: #846add;
+            width: 320px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 15px;
+            color: white;
+            margin-top: 20px;
+        }
+        .contact-form h2 {
+            margin-bottom: 20px;
+        }
+        .contact-form a {
+            color: #846add;
+        }
+        .error-message {
+            position: absolute;
+            left: 10px;
+            bottom: -20px;
+            color: red;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact">
+        <div class="contact-form">
+            <div class="left">
+                <img src="images/contact us.png" alt="">
+                <center><a href="./index.html">Back to Main Page</a></center>
+            </div>
+            <div class="right">
+                <form id="contactForm">
+                    <h2>Get In Touch With Us</h2>
+                    <div class="contact-form-input">
+                        <i class="fas fa-male"></i>
+                        <input type="text" name="name" id="name" placeholder="Name" autocomplete="off">
+                        <div class="error-message" id="nameError"></div>
+                    </div>
+                    <div class="contact-form-input">
+                        <i class="fas fa-envelope"></i>
+                        <input type="text" name="email" id="email" placeholder="Email" autocomplete="off">
+                        <div class="error-message" id="emailError"></div>
+                    </div>
+                    <div class="contact-form-input">
+                        <i class="fas fa-phone"></i>
+                        <input type="text" name="number" id="number" placeholder="Phone Number" autocomplete="off">
+                        <div class="error-message" id="numberError"></div>
+                    </div>
+                    <div class="contact-form-input textarea">
+                        <i class="fas fa-envelope"></i>
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <div class="error-message" id="messageError"></div>
+                    </div>
+                    <input type="submit" value="Send" class="send-button">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

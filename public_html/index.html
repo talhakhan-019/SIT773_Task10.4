@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>Visual Tutor</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body>
+    
+    <div class="maincontainer">
+        <!-- baner -->
+        <div class="baner">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand logo" href="./index.html">
+                    <img src="./images/logo.png" alt="">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: space-between;">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./courses.html">Courses</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">Contact</a>
+                      </li>
+                    </ul>
+                    <div style="margin-right: 100px;">
+                        <div class="btn-group" id="signupBtn" >
+                            <button type="button" class="btn dropdown-toggle" style="border: 1px solid black;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Join
+                            </button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="/signup.html">SignUp</a>
+                              <a class="dropdown-item" href="/signin.html">SignIn</a>
+                            </div>
+                        </div>
+                        <div class="btn-group" >
+                            <button id="username" type="button" class="btn dropdown-toggle" style="border: 1px solid black;" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            </button>
+                            <div class="dropdown-menu">
+                              <button id="logoutBtn" class="dropdown-item btn btn-danger logout-button" style="display: none;">Logout</button>
+                            </div>
+                        </div>
+                        <!-- <a href="#"><i class="fa fa-star"></i></a> -->
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            <div class="baner-content textarea">
+                <div class="text">
+                    <center><h1>Land Your Dream <span>Job</span> </h1></center>
+                    <center><h2>by <span>learning</span> some skills</h2></center>
+                    <center><p>Landing your dream job may seem like a daunting task but it can be done <br> with motivation and persistence. “Do what you love” is pretty common career advice but how do you get to that dream job</p></center>
+                </div>
+                <div class="search">
+                    <p class="search-text"  style="color: white;">Search</p>
+                    <input style="font-size: 15px;" type="text" placeholder="Search any subject e.g Computer Science" class="content-search">
+                    <div class="search-icon">
+                        <i class="fa fa-search"  style="color: white;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- working -->
+        <div class="working">
+            <center><h1 class="heading">How It Works?</h1></center>
+            <div class="teacher">
+                <center><h2 class="heading">Teacher Workflow</h2></center>
+                <div class="upper">
+                    <div class="post-courses step">
+                        <div class="image"><img src="images/upload courses.png" alt=""></div>
+                        <!-- <h3 class="step-title" class="step-title"></h3> -->
+                        <h4 style="text-align:center;">1. Upload Courses, Skills & Experience</h4>
+                        <p>Teacher will upload course with all details skills, experience and subject</p>
+                        <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, non quae quo officiis nisi consequuntur quas natus commodi consequatur</p> -->
+                    </div>
+                    <div class="student step">
+                        <div class="image"><img src="images/hire.png" alt=""></div>
+                        <h4 style="text-align:center;" class="step-title">2. Student will hire you</h4>
+                        <p>Student will buy his course and student can also hire them if he want to learn something in live classes.</p>
+                    </div>
+                    <div class="student step">
+                        <div class="image"><img src="images/online teaching.png" alt=""></div>
+                        <h4 style="text-align:center;" class="step-title">3. Visual Tutor Classroom</h4>
+                        <p>Teacher will teach his student with in an efficient eay in visual tutor classroom</p>
+                    </div>
+                    <div class="payment step">
+                        <div class="image"><img src="images/payment.png" alt=""></div>
+                        <h4 style="text-align:center;" class="step-title">4. Get Payment</h4>
+                        <p>Teacher will earn some money if any student buy his course or if someone hire him</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="student">
+                <center><h2 class="heading">Student Workflow</h2></center>
+                <div class="upper">
+                    <div class="enroll step">
+                        <div class="image"><img src="images/enroll.png" alt=""></div>
+                        <h4 style="text-align:center;" class="step-title" class="step-title">1. Enroll Course / Hire Teacher</h4>
+                        <p>Student will search course or teacher by filtering price, subject, teacher experience and rating. And enroll in it.</p>
+                    </div>
+                    <div class="chat step">
+                        <div class="image"><img src="images/chat.png" alt=""></div>
+                        <h4 style="text-align:center;" class="step-title">2. Chat with Teacher</h4>
+                        <p>Student can also chat with teacher if he wants to discuss anything about course and subject in details.</p>
+                    </div>
+                    <div class="classroom step">
+                        <div class="image"><img src="images/online teaching.png" alt=""></div>
+                        <h4 style="text-align:center;" class="step-title">3. Visual Tutor Classroom</h4>
+                        <p>Student can watch his courses and take his online classes in visual tutor classrom</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- why-us -->
+        <div class="why-us">
+            <center><h1 class="heading">Why Visual Tutor?</h1></center>
+            <div class="upper">
+                <div class="content">
+                    <div class="content-image">
+                        <img src="images/on demand teacher.png" alt="">
+                    </div>
+                    <div class="content-text">
+                        <h4>On-demand tutoring</h1>
+                        <p>Connect with an online tutor in less than 30
+                            seconds, 24/7. It doesn’t matter if you want help with
+                            a single problem or you need a 3-hour lesson.</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="content-image">
+                        <img src="images/learn from best teachers.png" alt="">
+                    </div>
+                    <div class="content-text">
+                        <h4>Learn from the best tutors</h1>
+                        <p>Highly qualified tutors from the best universities
+                            across the globe ready to help. An acceptance rate
+                            of 4% means all our tutors are thoroughly screened.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="lower">
+                <div class="content">
+                    <div class="content-image">
+                        <img src="images/all tools you need.png" alt="">
+                    </div>
+                    <div class="content-text">
+                        <h4>All the tools you need</h1>
+                        <p>Our lesson space features a virtual whiteboard, text
+                            editor, audio/video chat, screensharing and so much
+                            more. All lessons are archived for your convenience.</p>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="content-image">
+                        <img src="images/any subject.png" alt="">
+                    </div>
+                    <div class="content-text">
+                        <h4>Get help in any subject</h1>
+                        <p>We cover over 300 subjects across all grade levels.
+                            Whether it’s high school algebra or college-level
+                            Spanish, we have a tutor that can help.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <button class="get-started">
+                    Get Started
+                </button>
+            </div>
+        </div>
+        <!-- subject -->
+        <div class="subjects">
+            <center><h1 class="heading">Find online tutors in any subject</h1></center>
+            <div class="subjects-content">
+                <div class="subject">
+                    <div class="subject-image">
+                        <img src="images/subjects/cs1.png" alt="">
+                    </div>
+                    <p>Computer Science</p>
+                </div>
+                <div class="subject">
+                    <div class="subject-image">
+                        <img src="images/subjects/english.png" alt="">
+                    </div>
+                    <p>English</p>
+                </div>
+                <div class="subject">
+                    <div class="subject-image">
+                        <img src="images/subjects/urdu.png" alt="">
+                    </div>
+                    <p>Urdu</p>
+                </div>
+                <div class="subject">
+                    <div class="subject-image">
+                        <img src="images/subjects/physics1.png" alt="">
+                    </div>
+                    <p>physics</p>
+                </div>
+                <div class="subject">
+                    <div class="subject-image">
+                        <img src="images/subjects/math1.png" alt="">
+                    </div>
+                    <p>Math</p>
+                </div>
+                <div class="subject">
+                    <div class="subject-image">
+                        <img src="images/subjects/chemistry.png" alt="">
+                    </div>
+                    <p>Chemistry</p>
+                </div>
+                <div class="subject">
+                    <div class="subject-image">
+                        <img src="images/subjects/ai.png" alt="">
+                    </div>
+                    <p>Artificial Intelligence</p>
+                </div>
+            </div>
+        </div>
+        <!-- footer -->
+        <footer>
+            <div class="footer-content">
+                <div class="upper">
+                    <div class="first-section">
+                        <img src="images/logo.png" alt="">
+                        <ul>
+                            <li>Rules and Regulations</li>
+                            <li> &nbsp; | &nbsp; </li>
+                            <li>Privacy Policy</li>
+                        </ul>
+                        <br>
+                        <p>Made in Melbourne, Australia</p>
+                        <p>2024 Visual Tutor</p>
+                    </div>
+                    <div class="second-section">
+                        <ul>
+                            <li style="font-weight: bold;">More Details</li>
+                            <li>Home</li>
+                            <li>Contact Us</li>
+                            <li>Help Center</li>
+                            <li>Blog</li>
+                            <li>Partner with us</li>
+                            <li>Rule and regulations</li>
+
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+        window.onload = function() {
+            const params = new URLSearchParams(window.location.search);
+            const name = params.get('name');
+            const logoutBtn = document.getElementById('logoutBtn');
+            const signupBtn = document.getElementById('signupBtn');
+            const username = document.getElementById('username');
+
+            if (name) {
+                username.innerText = name;
+                logoutBtn.style.display = 'block';
+                signupBtn.style.display = 'none';
+            }
+            else{
+                username.style.display = 'none';
+                logout.style.display = 'none';
+            }
+
+            logoutBtn.addEventListener('click', function() {
+                // Perform logout actions here
+                window.location.href = '/'; // Redirect to home page after logout
+            });
+        };
+    </script>
+</body>
+</html>
